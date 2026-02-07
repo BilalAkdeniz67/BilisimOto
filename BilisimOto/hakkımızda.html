@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgiler</title>
+    <link rel="icon" type="image/png" href="resimler/rental-car.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-image: url("resimler/Ekran\ görüntüsü\ 2026-02-06\ 212024.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+        }
+
+        .card {
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #7e7e7e;
+            border-radius: 5px;
+            box-shadow: 4px 2px 20px #7e7e7e;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        a:hover {
+            color: #b83b3b;
+        }
+
+        .footer-area {
+            background-color: #343A40;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        /* DARK MODE */
+        body.dark .footer-area {
+            background-color: #121212;
+        }
+
+
+        body.dark {
+            background-color: #0f0f0f;
+            background-image: none;
+        }
+
+
+        body.dark .container {
+            background-color: #1e1e1e;
+        }
+
+        body.dark .card {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            border-color: #444;
+            box-shadow: none;
+        }
+
+        body.dark hr {
+            border-color: #444;
+        }
+
+        body.dark .footer,
+        body.dark .copyright {
+            color: #ffffff;
+        }
+
+        body.dark .nav-link {
+            color: #ffffff;
+        }
+
+
+        body,
+        .container,
+        .card,
+        .navbar,
+        footer {
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-attachment: fixed;
+            }
+
+            .container {
+                padding: 10px !important;
+                margin: 0 !important;
+                width: 100% !important;
+            }
+
+            .navbar-brand img {
+                max-width: 150px;
+                height: auto;
+            }
+
+            .navbar {
+                margin-top: 10px !important;
+            }
+
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .navbar-nav .nav-item {
+                margin: 5px 0;
+            }
+
+            .card {
+                padding: 15px !important;
+                margin-top: 15px !important;
+            }
+
+            .card h2 {
+                font-size: 1.5rem;
+            }
+
+            .card p {
+                font-size: 0.95rem;
+            }
+
+            .footer-area {
+                padding: 20px !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+
+            .footer-area h3 {
+                font-size: 1.2rem;
+                margin-top: 20px;
+            }
+
+            .footer-area ul {
+                padding-left: 0;
+            }
+
+            .footer-area li {
+                font-size: 0.9rem;
+            }
+
+            .card[style*="height: 235px"] {
+                height: auto !important;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar-brand img {
+                max-width: 120px;
+            }
+
+            .card h2 {
+                font-size: 1.3rem;
+            }
+
+            .card p,
+            .card li {
+                font-size: 0.9rem;
+            }
+
+            .footer-area h3 {
+                font-size: 1.1rem;
+            }
+
+            .footer-area li {
+                font-size: 0.85rem;
+            }
+
+            .copyright {
+                font-size: 0.85rem;
+                padding: 10px 5px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="navbar-brand">
+                    <img class="img-fluid" style="cursor: pointer;" onclick="window.location.href='index.html'"
+                        src="resimler/Ekran görüntüsü 2026-02-06 210622-Photoroom.png" alt="">
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-2">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav d-flex w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html" style="font-size: 17px;">Bilişim Oto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Hakkımızda</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown">
+                                        Hizmetlerimiz
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Link</a></li>
+                                        <li><a class="dropdown-item" href="#">Another link</a></li>
+                                        <li><a class="dropdown-item" href="#">A third link</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item ms-2;">
+                                    <button class="btn btn-outline-light btn-sm" onclick="toggleTheme()" id="themeBtn">
+                                        🌙
+                                    </button>
+                                </li>
+                                <li class="nav-item ms-auto">
+                                    <a class="nav-link" href="#"> <i class="bi bi-envelope-fill"></i> İletişim</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <h2>Hakkımızda</h2>
+                    <hr>
+                    <p>Bilşim Oto, otomotiv sektöründe uzmanlaşmış bir firmadır. 2005 yılında kurulan şirketimiz,
+                        müşterilerimize en iyi hizmeti sunmak için sürekli olarak gelişim sürecine devam etmektedir.
+                        Modern teknoloji ve yüksek kaliteli hizmet ile müşterilerimize değer katmayı amaçlamaktayız.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <h2>Vizyonumuz</h2>
+                    <hr>
+                    <p>Bilşim Oto olarak, otomotiv sektöründe lider bir firma olmayı hedefliyoruz. Müşteri memnuniyetini
+                        en üst düzeye çıkarmak, yenilikçi çözümler sunmak ve sektördeki gelişmeleri takip ederek sürekli
+                        olarak kendimizi geliştirmek vizyonumuzun temel taşlarıdır.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <h2>Misyonumuz</h2>
+                    <hr>
+                    <p>Bilşim Oto'nun misyonu, müşterilerimize kaliteli hizmet sunarak onların ihtiyaçlarını karşılamak
+                        ve otomotiv sektöründe güvenilir bir iş ortağı olmaktır. Müşteri odaklı yaklaşımımızla, her
+                        zaman en iyi çözümleri sunmayı amaçlıyoruz.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <h2>Değerlerimiz</h2>
+                    <hr>
+                    <p>Bilşim Oto olarak, dürüstlük, müşteri memnuniyeti, yenilikçilik ve sürdürülebilirlik gibi temel
+                        değerlere bağlıyız. İşimizi bu değerler doğrultusunda yürütmekte ve müşterilerimize en iyi
+                        hizmeti sunmak için sürekli olarak çalışmaktayız.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <h2>İnsan Kaynakları</h2>
+                    <hr>
+                    <p>Bilşim Oto, çalışanlarına değer veren bir şirket olarak, nitelikli ve deneyimli bir ekip ile
+                        çalışmaktadır. İnsan kaynakları politikamız, çalışanlarımızın gelişimini desteklemek ve onlara
+                        kariyer fırsatları sunmak üzerine kuruludur. Çalışanlarımızın mutluluğu ve motivasyonu,
+                        şirketimizin
+                        başarısının anahtarıdır.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <h2>İletişim</h2>
+                    <hr>
+                    <p>Bilşim Oto'ya ulaşmak için aşağıdaki iletişim bilgilerini kullanabilirsiniz:</p>
+                    <ul>
+                        <li>Adres: Örnek Mahallesi, Örnek Sokak No: 123, İstanbul</li>
+                        <li>Telefon: +90 123 456 7890</li>
+                        <li>Email: bilişimoto@hotmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-area text-white p-5">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>KURUMSAL</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Hakkımızda</a>
+                        </li>
+                        <li>
+                            <a href="#">Misyonumuz</a>
+                        </li>
+                        <li>
+                            <a href="#">Vizyonumuz</a>
+                        </li>
+                        <li>
+                            <a href="#">İnsan Kaynakları</a>
+                        </li>
+                        <li>
+                            <a href="#">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>HİZMETLERİMİZ</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Sıfır Araç Satışı</a>
+                        </li>
+                        <li>
+                            <a href="#">İkinci El Araç Satışı</a>
+                        </li>
+                        <li>
+                            <a href="#">Araç Kiralama</a>
+                        </li>
+                        <li>
+                            <a href="#">Araç Eksperiz</a>
+                        </li>
+                        <li>
+                            <a href="#">Araç Sigorta</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>ŞUBELERİMİZ</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Gebze Şubesi</a>
+                        </li>
+                        <li>
+                            <a href="#">Pendik Şubesi</a>
+                        </li>
+                        <li>
+                            <a href="#">Kadıköy Şubesi</a>
+                        </li>
+                        <li>
+                            <a href="#">Sakarya Şubesi</a>
+                        </li>
+                        <li>
+                            <a href="#">İzmit Şubesi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>BİZi TAKİP EDİN</h3>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="bi bi-instagram"></i> İnstagram</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-youtube"></i> YouTube</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-twitter"></i> Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-facebook"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0">
+            <div class="col-sm-12">
+                <p class="text-center copyright">
+                    Copyright © 2026 Bilişim Oto. Tüm hakları saklıdır.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script>
+    const btn = document.getElementById("themeBtn");
+
+    function setIcon() {
+        btn.innerHTML = document.body.classList.contains("dark") ? "☀️" : "🌙";
+    }
+
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark");
+    }
+
+    setIcon();
+
+    function toggleTheme() {
+        document.body.classList.toggle("dark");
+        localStorage.setItem(
+            "theme",
+            document.body.classList.contains("dark") ? "dark" : "light"
+        );
+        setIcon();
+    }
+</script>
+
+
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link rel="icon" type="image/png" href="resimler/car-wash.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="navbar-brand">
+                    <img class="img-fluid" style="cursor: pointer;" onclick="window.location.href='index.html'"
+                        src="resimler/Ekran görüntüsü 2026-02-06 210622-Photoroom.png" alt="">
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-2">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav d-flex w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html" style="font-size: 17px;">Bilişim Oto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown">
+                                        Hizmetlerimiz
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Link</a></li>
+                                        <li><a class="dropdown-item" href="#">Another link</a></li>
+                                        <li><a class="dropdown-item" href="#">A third link</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item ms-3">
+                                    <button id="themeBtn" class="btn btn-outline-light btn-sm" onclick="toggleTheme()">
+                                        🌙
+                                    </button>
+                                </li>
+
+
+                                <li class="nav-item ms-auto">
+                                    <a class="nav-link" href="hakkımızda.html"> <i class="bi bi-envelope-fill"></i>
+                                        İletişim</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12" style="margin-top: 20px;">
+                <div id="arabaSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#arabaSlider" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#arabaSlider" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#arabaSlider" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#arabaSlider" data-bs-slide-to="3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="resimler/a-hatchback.jpg" class="d-block w-100 img-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>MERCEDES</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="resimler/2018-audi-rs5-coupe-first-drive.jpg" class="d-block w-100 img-fluid">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="resimler/Toyota-Corolla-Sedan-.jpeg" class="d-block w-100 img-fluid">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="resimler/yeni-skoda-octavia-6.jpg" class="d-block w-100 img-fluid">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#arabaSlider"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#arabaSlider"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row text-dark gx-10 gy-15">
+            <div class="col-sm-4">
+                <div class="kutu">
+                    <div class="d-flex align-items-center mb-2">
+                        <img class="img-fluid me-3" style="width: 80px;" src="resimler/gdakaska-keys-1674676_1280.png"
+                            alt="">
+                        <h3>ARAÇ SATIŞ</h3>
+                    </div>
+                    <p class="mb-0">
+                        Araç satış hizmetimizle, müşterilerimize geniş bir araç yelpazesi sunuyoruz. İster sıfır
+                        araçlar, ister ikinci el araçlar olsun, her bütçeye uygun seçeneklerimizle müşterilerimizin
+                        ihtiyaçlarını karşılamayı hedefliyoruz.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="kutu">
+                    <div class="d-flex align-items-center mb-2">
+                        <img class="img-fluid me-3" style="width: 80px;" src="resimler/sports-car.png" alt="">
+                        <h3>İKİNCİ EL ARAÇ</h3>
+                    </div>
+                    <p class="mb-0">
+                        İkinci el araç hizmetimizle, müşterilerimize geniş bir araç yelpazesi sunuyoruz. İster sıfır
+                        araçlar, ister ikinci el araçlar olsun, her bütçeye uygun seçeneklerimizle müşterilerimizin
+                        ihtiyaçlarını karşılamayı hedefliyoruz.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="kutu">
+                    <div class="d-flex align-items-center mb-2">
+                        <img class="img-fluid me-3" style="width: 80px;" src="resimler/car.png" alt="">
+                        <h3>ARAÇ KİRALAMA</h3>
+                    </div>
+                    <p class="mb-0">
+                        Araç kiralama hizmetimizle, müşterilerimize geniş bir araç yelpazesi sunuyoruz. Her bütçeye
+                        uygun seçeneklerimizle müşterilerimizin ihtiyaçlarını karşılamayı hedefliyoruz.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="ilan">
+                    <img class="img-fluid" src="resimler/ilan1.png" alt="">
+                    <h3 style="text-align: center;">TEMİZ SATILIK ARAÇ</h3>
+                    <h4 style="text-align: center;">FİYAT: 1.565.000 TL</h4>
+                    <hr>
+                    <div class="px-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="mb-0 ms-0">Marka:</h5>
+                            <span>
+                                <img src="resimler/audi-logo.png" alt="Audi"
+                                    style="width: 30px; vertical-align: middle; margin-right: 10px;">
+                                Audi
+                            </span>
+                        </div>
+                        <hr class="w-100 my-2">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="mb-0 ms-0">Model:</h5>
+                            <span>Q3</span>
+                        </div>
+                        <hr class="w-100 my-2">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="mb-0 ms-0">Yakıt:</h5>
+                            <span>Benzin</span>
+                        </div>
+                        <hr class="w-100 my-2">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="mb-0 ms-0">Vites:</h5>
+                            <span>Otomatik</span>
+                        </div>
+                        <hr class="w-100 my-2">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="mb-0 ms-0">Km:</h5>
+                            <span>175.000</span>
+                        </div>
+                        <hr class="w-100 my-2">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="mb-0 ms-0">Yıl:</h5>
+                            <span>2015</span>
+                        </div>
+                    </div>
+                    <br>
+                    <h4 style="margin-left: 30px;">AÇIKLAMA:</h4>
+                    <p style="margin-left: 30px;">Temiz ve bakımlı bir araç. 2015 model Audi Q3, 175.000 km'de. Otomatik
+                        vites, benzinli motor ile çalışmaktadır.</p>
+                    <button class="btn btn-primary" onclick="window.location.href='ilanlar/ilan1.html'"
+                        style="margin-left: 30px; margin-bottom: 10px; margin-right: 10px; float: right;">Detaylar...</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="ilan">
+                    <img class="img-fluid" src="resimler/Ekran görüntüsü 2026-02-07 005113.png" alt="">
+                    <h3 style="text-align: center;">TEMİZ SATILIK ARAÇ</h3>
+                    <h4 style="text-align: center;">FİYAT: 1.487.000 TL </h4>
+                    <hr>
+                    <div class="px-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="mb-0 ms-0">Marka:</h5>
+                            <span>
+                                <img src="resimler/toyota-logo.png" alt="Toyota"
+                                    style="width: 30px; vertical-align: middle; margin-right: 10px;">
+                                Toyota
+                            </span>
+                        </div>
+                        <hr class="w-100 my-2">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="mb-0 ms-0">Model:</h5>
+                            <span>Corolla</span>
+                        </div>
+                        <hr class="w-100 my-2">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="mb-0 ms-0">Yakıt:</h5>
+                            <span>Benzin</span>
+                        </div>
+                        <hr class="w-100 my-2">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="mb-0 ms-0">Vites:</h5>
+                            <span>Otomatik</span>
+                        </div>
+                        <hr class="w-100 my-2">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="mb-0 ms-0">Km:</h5>
+                            <span>83.000</span>
+                        </div>
+                        <hr class="w-100 my-2">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="mb-0 ms-0">Yıl:</h5>
+                            <span>2022</span>
+                        </div>
+                    </div>
+                    <br>
+                    <h4 style="margin-left: 30px;">AÇIKLAMA:</h4>
+                    <p style="margin-left: 30px;">Temiz ve bakımlı bir araç. 2022 model Toyota Corolla, 83.000 km'de.
+                        Otomatik vites, benzinli motor ile çalışmaktadır.</p>
+                    <button class="btn btn-primary" onclick="window.location.href='ilanlar/ilan2.html'"
+                        style="margin-left: 30px; margin-bottom: 10px; margin-right: 10px; float: right;">Detaylar...</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="arama">
+                    <div class="input-group mb-2 mt-3 px-3">
+                        <input type="text" class="form-control" placeholder="Aranacak kelime">
+                        <button class="btn btn-outline-info" type="button">Ara</button>
+                    </div>
+                </div>
+
+                <ul class="list-group mb-2 mt-3">
+                    <li class="list-group-item">Sıfır Araçlar</li>
+                    <li class="list-group-item">İkinci El Araçlar</li>
+                    <li class="list-group-item">Araç Kiralama</li>
+                    <li class="list-group-item">Araç Nakil</li>
+                    <li class="list-group-item">Araç Sigorta</li>
+                </ul>
+
+                <h3>HABERLER</h3>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h4 class="card-subtitle mb-2 ">19.12.2025</h4>
+                        <p class="card-text " style="font-size: 14px;">Bilişim Oto, sektördeki lider konumunu
+                            güçlendirmek
+                            için yeni bir kampanya başlatıyor. Kampanya kapsamında, müşterilere özel indirimler ve
+                            avantajlı fırsatlar sunulacak. Detaylar için web sitemizi ziyaret edin.</p>
+                        <div class="text-end">
+                            <button class="btn btn-info btn-sm text-white">Devamı</button>
+                        </div>
+                    </div>
+                    <hr style="width: 100%;">
+                    <div class="card-body">
+                        <h4 class="card-subtitle mb-2 ">19.12.2025</h4>
+                        <p class="card-text " style="font-size: 14px;">Bugün yapılan açıklamaya göre, Bilişim
+                            Oto yeni bir
+                            araç modeli tanıtacak. Tanıtım etkinliği, 25 Aralık 2025 tarihinde gerçekleştirilecek ve
+                            sektörde büyük bir heyecan yaratacak. Detaylar için takipte kalın.</p>
+                        <div class="text-end">
+                            <button class="btn btn-info btn-sm text-white">Devamı</button>
+                        </div>
+                    </div>
+                    <hr style="width: 100%;">
+                    <div class="card-body">
+                        <h4 class="card-subtitle mb-2 ">19.12.2025</h4>
+                        <p class="card-text " style="font-size: 14px;">Yeni araç piyasasında rekabet artarken,
+                            Bilişim
+                            Oto'nun müşteri odaklı yaklaşımı ve kaliteli hizmet anlayışıyla sektördeki lider konumunu
+                            koruması bekleniyor. Müşterilere sunulan avantajlı fırsatlar ve kampanlarla, Bilişim
+                            Oto'nun tercih edilen marka olmaya devam edeceği öngörülüyor.</p>
+                        <div class="text-end">
+                            <button class="btn btn-info btn-sm text-white">Devamı</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-area text-white p-5" style="background-color: #343A40;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>KURUMSAL</h3>
+                    <ul>
+                        <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                        <li><a href="hakkımızda.html">Misyonumuz</a></li>
+                        <li><a href="hakkımızda.html">Vizyonumuz</a></li>
+                        <li><a href="hakkımızda.html">İnsan Kaynakları</a></li>
+                        <li><a href="hakkımızda.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>HİZMETLERİMİZ</h3>
+                    <ul>
+                        <li><a href="#">Sıfır Araç Satışı</a></li>
+                        <li><a href="#">İkinci El Araç Satışı</a></li>
+                        <li><a href="#">Araç Kiralama</a></li>
+                        <li><a href="#">Araç Eksperiz</a></li>
+                        <li><a href="#">Araç Sigorta</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>ŞUBELERİMİZ</h3>
+                    <ul>
+                        <li><a href="#">Gebze Şubesi</a></li>
+                        <li><a href="#">Pendik Şubesi</a></li>
+                        <li><a href="#">Kadıköy Şubesi</a></li>
+                        <li><a href="#">Sakarya Şubesi</a></li>
+                        <li><a href="#">İzmit Şubesi</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>BİZi TAKİP EDİN</h3>
+                    <ul>
+                        <li><a href="#"><i class="bi bi-instagram"></i> İnstagram</a></li>
+                        <li><a href="#"><i class="bi bi-youtube"></i> YouTube</a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0">
+            <div class="col-sm-12">
+                <footer class="footer text-center py-3">
+                    <span class="copyright">Copyright © 2026 Bilişim Oto. Tüm hakları saklıdır.</span>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const btn = document.getElementById("themeBtn");
+
+    function setIcon() {
+        btn.innerHTML = document.body.classList.contains("dark") ? "☀️" : "🌙";
+    }
+
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark");
+    }
+
+    setIcon();
+
+    function toggleTheme() {
+        document.body.classList.toggle("dark");
+        localStorage.setItem(
+            "theme",
+            document.body.classList.contains("dark") ? "dark" : "light"
+        );
+        setIcon();
+    }
+</script>
+
+</html>
